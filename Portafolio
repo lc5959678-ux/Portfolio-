@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio de Yanina Luján</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: #f4f6f8;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+        header {
+            background: linear-gradient(135deg, #1e1e2f, #3f3f5f);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            position: relative;
+        }
+        header h1 { font-size: 3em; margin: 0; }
+        header p { font-size: 1.3em; color: #ffcc00; margin-top: 10px; }
+        header img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff4081;
+            margin-top: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #ff4081;
+            flex-wrap: wrap;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px 20px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #ffd700; }
+        section { max-width: 1000px; margin: 50px auto; padding: 0 20px; }
+        h2 { text-align: center; margin-bottom: 40px; color: #1e1e2f; }
+
+        /* Proyectos */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+        .project {
+            background: #fff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .project h3 { margin-top: 0; color: #ff4081; }
+        .project p { font-size: 0.95em; }
+        .project a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: #1e1e2f;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .project a:hover { background: #ff4081; }
+
+        /* Habilidades */
+        .skills { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; text-align: center; }
+        .skill { background: #ff4081; color: #fff; padding: 12px 20px; border-radius: 25px; font-weight: bold; transition: 0.3s; }
+        .skill:hover { background: #ffd700; color: #1e1e2f; }
+
+        /* Contacto */
+        .contact a {
+            display: inline-block;
+            margin: 10px 15px;
+            text-decoration: none;
+            color: #fff;
+            background: #1e1e2f;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        .contact a:hover { background: #ff4081; }
+
+        footer {
+            background: #1e1e2f;
+            color: #fff;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 50px;
+        }
+
+        @media(max-width:600px){
+            header h1 { font-size: 2em; }
+            header p { font-size: 1em; }
+            nav a { margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Yanina Luján Rodríguez Chávez</h1>
+    <p>Ingeniera en Informática | Python & C++ | Desarrollo de Software</p>
+    <img src="https://via.placeholder.com/120" alt="Foto de Yanina">
+</header>
+
+<nav>
+    <a href="#projects"><i class="fas fa-laptop-code"></i> Proyectos</a>
+    <a href="#skills"><i class="fas fa-tools"></i> Habilidades</a>
+    <a href="#about"><i class="fas fa-user"></i> Sobre mí</a>
+    <a href="#contact"><i class="fas fa-envelope"></i> Contacto</a>
+</nav>
+
+<section id="projects">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Calculadora en Python</h3>
+            <p>Calculadora con interfaz gráfica usando Tkinter, incluye operaciones básicas y avanzadas.</p>
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Juego en C++</h3>
+            <p>Juego de consola con niveles, puntuación y mecánicas interactivas para practicar programación orientada a objetos.</p>
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+        <div class="project">
+            <h3>Gestor de Biblioteca</h3>
+            <p>Aplicación web para organizar libros y archivos usando HTML, CSS y JavaScript.</p>
+            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Habilidades Técnicas</h2>
+    <div class="skills">
+        <div class="skill">Python</div>
+        <div class="skill">C++</div>
+        <div class="skill">HTML/CSS/JS</div>
+        <div class="skill">Git & GitHub</div>
+        <div class="skill">Bases de Datos</div>
+    </div>
+</section>
+
+<section id="about">
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante de Ingeniería en Informática, apasionada por la programación y el desarrollo de proyectos que combinan creatividad y lógica. Me especializo en Python y C++, con interés en aplicaciones web y software innovador.</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contacto</h2>
+    <p>Podés escribirme a: <a href="mailto:tucorreo@example.com"><i class="fas fa-envelope"></i> tucorreo@example.com</a></p>
+    <p>Sígueme en:</p>
+    <a href="https://github.com/tuusuario"><i class="fab fa-github"></i> GitHub</a>
+    <a href="https://www.linkedin.com/in/tuusuario"><i class="fab fa-linkedin"></i> LinkedIn</a>
+</section>
+
+<footer>
+    © 2025 Yanina Luján Rodríguez Chávez
+</footer>
+
+</body>
+</html>
